@@ -2,20 +2,14 @@ p {
   text-decoration: underline;
 }
 
-/* Slide in animation */
-.slide-in {
-  animation: slideInFromLeft 0.5s ease-out forwards;
-  /*name of the animation/keyframe 
-    duration 
-    type 
-    direction */
+#plusSymbol {
+  background: yellowgreen; /*TEMP COLOR*/
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
 }
 
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%); /* Starts completely off-screen to the left */
-  }
-  to {
-    transform: translateX(0); /* Ends at its original position */
-  }
+#plusSymbol:hover {
+  transform: scale(1.1);
 }
+
