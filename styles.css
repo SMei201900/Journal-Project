@@ -1,3 +1,21 @@
 p {
   text-decoration: underline;
 }
+
+/* Slide in animation */
+.slide-in {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+  /*name of the animation/keyframe 
+    duration 
+    type 
+    direction */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Starts completely off-screen to the left */
+  }
+  to {
+    transform: translateX(0); /* Ends at its original position */
+  }
+}
