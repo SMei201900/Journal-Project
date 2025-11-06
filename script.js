@@ -8,3 +8,11 @@ plusSymbol.addEventListener("click", () => {
         --intent: adds a "sliding in from the left" animation*/
     console.log("Clicked")
 })
+
+
+
+
+/*
+.remove() is how to remove 
+*/
+
