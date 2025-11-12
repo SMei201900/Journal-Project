@@ -1,13 +1,6 @@
-h1 {
-  font-size: 7em;
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 400;
-}
-
 #plusSymbol {
-  /* font-size: 22px;
-  font-family: "Gaegu", sans-serif; */
+  font-size: 22px;
+  font-family: "Gaegu", sans-serif; /*need to add these since btn do not accept by default*/
   background: yellowgreen; /*TEMP COLOR*/
   padding: 10px;
   border: none;
@@ -55,8 +48,16 @@ add sliding aniamtion to reveal new text for button
 
 /*ALT + SHIFT + F = formatting */
 
+h1 {
+  font-size: 7em;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
 body {
   font-family: "Gaegu", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
