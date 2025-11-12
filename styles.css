@@ -12,6 +12,8 @@ h1 {
   position: absolute;      /* take the button out of normal document flow */
   left: 50%;               /* move the left edge of the btn to the center */
   transform: translateX(-50%); 
+    /* shift btn back by half its width b/c I want the center of the btn not the top-left corner of the btn to be the center */
+
 }
 
 #plusSymbol:hover {
