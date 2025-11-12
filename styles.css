@@ -1,6 +1,7 @@
 h1 {
   font-size: 100px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #plusSymbol {
@@ -8,16 +9,17 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 25px;
+  position: absolute;      /* take the button out of normal document flow */
+  left: 50%;               /* move the left edge of the btn to the center */
+  transform: translateX(-50%); 
 }
 
 #plusSymbol:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /*enlarges the btn*/
 }
 
-/*add a border gradient upon hovering the button 
+/*PLANS: 
+add a border gradient upon hovering the button 
 add sliding aniamtion to reveal new text for button 
 */
 
-.moveBtnToCenter {
-  margin-left: 50vh;
-}
