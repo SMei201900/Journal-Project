@@ -1,6 +1,6 @@
 h1 {
-    font-size: 100px;
-    text-align: center;
+  font-size: 100px;
+  text-align: center;
 }
 
 #plusSymbol {
@@ -14,4 +14,10 @@ h1 {
   transform: scale(1.1);
 }
 
-/*add a border gradient upon hovering */
+/*add a border gradient upon hovering the button 
+add sliding aniamtion to reveal new text for button 
+*/
+
+.moveBtnToCenter {
+  margin-left: 50vh;
+}
