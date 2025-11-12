@@ -22,11 +22,13 @@
   padding-top: 10px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /*above 3 codes is to make sure the box is in the middle*/
+  transform: translateX(
+    -50%
+  ); /*above 3 codes is to make sure the box is in the middle*/
   height: 300px;
   width: 50%; /*implementing a default sizing for the journalTextBox*/
-  border: solid 3px rgba(128,128,128, 0.5); /*gray with a bit of opacity/transparency*/
-  border-radius: 40px; 
+  border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
+  border-radius: 40px;
 }
 
 #journalBox::placeholder {
@@ -50,7 +52,8 @@ add sliding aniamtion to reveal new text for button
 /*ALT + SHIFT + F = formatting 
 CTRL + / makes comments */
 
-textarea, #plusSymbol {
+textarea,
+#plusSymbol {
   font-family: "Gaegu", sans-serif;
 }
 
@@ -68,5 +71,7 @@ body {
 }
 
 html {
-  background-color:#F3F2F2; 
+  background-color: #f3f2f2;
+  background-image: radial-gradient(circle, black 1px, transparent 1px);
+  background-size: 20px 20px; /*spacing between the dots */
 }
