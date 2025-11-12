@@ -9,19 +9,18 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 25px;
-  position: absolute;      /* take the button out of normal document flow */
-  left: 50%;               /* move the left edge of the btn to the center */
-  transform: translateX(-50%); 
-    /* shift btn back by half its width b/c I want the center of the btn not the top-left corner of the btn to be the center */
-
+  position: absolute; /* take the button out of normal document flow */
+  left: 50%; /* move the left edge of the btn to the center */
+  transform: translateX(-50%);
+  /* shift btn back by half its width b/c I want the center of the btn not the top-left corner of the btn to be the center */
+  transform-origin: center; /*bc default is top-left corner which causes the btn to shift right*/
 }
 
 #plusSymbol:hover {
-  transform: scale(1.1); /*enlarges the btn*/
+  transform: translateX(-50%) scale(1.1); /*makes sure centerOfBtn is in the middle + enlarges the btn*/
 }
 
-/*PLANS: 
+/*PLANS?
 add a border gradient upon hovering the button 
 add sliding aniamtion to reveal new text for button 
 */
-
