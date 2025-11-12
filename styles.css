@@ -47,7 +47,8 @@ add a border gradient upon hovering the button
 add sliding aniamtion to reveal new text for button 
 */
 
-/*ALT + SHIFT + F = formatting */
+/*ALT + SHIFT + F = formatting 
+CTRL + / makes comments */
 
 textarea, #plusSymbol {
   font-family: "Gaegu", sans-serif;
@@ -64,4 +65,8 @@ body {
   font-family: "Gaegu", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+html {
+  background-color:#f7f7f0; 
 }
