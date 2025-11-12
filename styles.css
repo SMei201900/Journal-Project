@@ -25,7 +25,7 @@
   transform: translateX(-50%); /*above 3 codes is to make sure the box is in the middle*/
   height: 300px;
   width: 50%; /*implementing a default sizing for the journalTextBox*/
-  border: solid 3px;
+  border: solid 3px rgba(128,128,128, 0.5); /*gray with a bit of opacity/transparency*/
   border-radius: 40px; 
 }
 
@@ -57,7 +57,7 @@ textarea, #plusSymbol {
 h1 {
   font-size: 7em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-weight: 400;
 }
 
@@ -68,5 +68,5 @@ body {
 }
 
 html {
-  background-color:#f7f7f0; 
+  background-color:#F3F2F2; 
 }
