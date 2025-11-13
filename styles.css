@@ -15,6 +15,12 @@
   transform: translateX(-50%) scale(1.1); /*makes sure centerOfBtn is in the middle + enlarges the btn*/
 }
 
+.transparent { 
+  background-color: rgba(255, 255, 255, 0); /* Initial transparent background */
+  border: none;
+}
+
+
 #journalBox {
   margin-top: 65px;
   font-size: 18px;
@@ -22,19 +28,22 @@
   padding-top: 10px;
   position: absolute;
   left: 50%;
-  transform: translateX(
-    -50%
-  ); /*above 3 codes is to make sure the box is in the middle*/
+  transform: translateX(-50%); /*above 3 codes is to make sure the box is in the middle*/
   height: 300px;
   width: 50%; /*implementing a default sizing for the journalTextBox*/
   border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
   border-radius: 40px;
+  background-color: white; 
 }
 
-#journalBox::placeholder {
+.placeholder {
   /*applies only to the journalTextBox's placeholder text*/
   padding-left: 1px;
   font-size: 18px;
+}
+
+#journalBox:focus {
+  border-color: rgba(0, 0, 0, 0.8); /* Makes border bolder/black when clicked */
 }
 
 /*journal colors: 
@@ -42,7 +51,10 @@
 #F7CFD8 pink 
 #FCD23F yellow 
 #F7A28D red/coral 
-#F4CFB5 peach*/
+#F4CFB5 peach
+
+F5F5F5 
+F2F3F5 */
 
 /*PLANS?
 add a border gradient upon hovering the button 
@@ -52,8 +64,17 @@ add sliding aniamtion to reveal new text for button
 /*ALT + SHIFT + F = formatting 
 CTRL + / makes comments */
 
-textarea,
-#plusSymbol {
+
+
+
+
+
+
+
+
+
+
+textarea, #plusSymbol {
   font-family: "Gaegu", sans-serif;
 }
 
