@@ -5,16 +5,6 @@ let textfield = document.getElementById("journalBox");
 //
 let click = 0; 
 
-let diarySentenceStarters = [
-  "Today I ...", 
-  "Dear Diary ...",
-  "You won't believe what happened today ...", 
-  "To recap ...", 
-  "Today was a sad day because ...", 
-  "Recently ..."
-]
-
-
 /*so I click the plusBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading*/
@@ -22,7 +12,7 @@ plusSymbol.addEventListener("click", (event) => {
   // 
   click = click + 1;
   if (click >1) {
-    textfield.placeholder = diarySentenceStarters.forEach(random) ; /*reset the textarea if clicking the plusSymbolBtn*/
+    textfield.placeholder = "Dear Diary ..." ; /*reset the textarea if clicking the plusSymbolBtn*/
   }
 });
 
