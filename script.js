@@ -4,14 +4,15 @@ let textfield = document.getElementById("journalBox");
 //
 let click = 0; 
 
-/*so I click the plusBtn and the textara displays */
+/*so I click the plusSymbolBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading*/
   textfield.style.display = "block";
-  // 
+  /*reset the textarea if clicking the plusSymbolBtn*/
   click = click + 1;
   if (click >1) {
-    textfield.placeholder = "Dear Diary ..." ; /*reset the textarea if clicking the plusSymbolBtn*/
+    textfield.placeholder = "Dear Diary ..." ; 
+    textfield.value = ""; 
   }
 });
 
@@ -42,8 +43,9 @@ postbtn.addEventListener("click", (event) => {
   })
   //
   
-  if (text.length == 0) {
+  if (text.length == 0) { /*prevent an empty post from being made*/
     alert("Please write something first"); 
+    entry = false; 
   } else {
   entry.appendChild(entryText); /*attaching journalBox.value aka what I typed to entry aka the new div*/
   entry.appendChild(deletebtn); /*attaching the btn to the div also*/
@@ -54,11 +56,7 @@ postbtn.addEventListener("click", (event) => {
 });
 
 
-
 /*NEXT STEPS: 
-After the post gets created, there should be an X button next to it to delete it 
-
----------- WANTS: 
 the resize(?) of the textarea (aka that litter corner) needs to be darker /bigger or something 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascasing pixel stars? 
