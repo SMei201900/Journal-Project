@@ -64,6 +64,13 @@ textarea, #plusSymbol, #postBtn {
   font-family: "Gaegu", sans-serif;
 }
 
+#displayArea {
+  margin: 50vh;
+  border: black 5px solid;
+}
+
+
+
 h1 {
   font-size: 7em;
   text-align: center;
