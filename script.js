@@ -2,7 +2,7 @@ let body = document.body;
 //
 let plusSymbol = document.getElementById("plusSymbol");
 
-plusSymbol.addEventListener("click", () => {
+plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading*/
   plusSymbol.textContent = "something was clicked"; /*changes the text of the button*/
   console.log("Clicked")
@@ -13,7 +13,7 @@ plusSymbol.addEventListener("click", () => {
 
 let postbtn = document.getElementById("postBtn");
 
-postbtn.addEventListener("click", () => {
+postbtn.addEventListener("click", (event) => {
   event.preventDefault(); 
   console.log("the textarea stuff needs to show up"); 
 })

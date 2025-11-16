@@ -11,7 +11,7 @@
 }
 
 #journalBox {
-  margin-top: 65px;
+  margin-top: 25px;
   font-size: 18px;
   padding-left: 20px;
   padding-top: 10px;
@@ -23,34 +23,17 @@
   border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
   border-radius: 40px;
   background-color: white;
-}
-
-.placeholder {
-  /*applies only to the journalTextBox's placeholder text*/
-  padding-left: 1px;
-  font-size: 18px;
+  display: none; /*should make the textfield hidden until the plusSymbolBtn is clicked*/
 }
 
 #journalBox:focus {
   border-color: rgba(0, 0, 0, 0.8); /* Makes border bolder/black when clicked */
 }
 
-/*journal colors: 
-#D6BFDE purple 
-#F7CFD8 pink 
-#FCD23F yellow 
-#F7A28D red/coral 
-#F4CFB5 peach
-
-some shades of white: #F5F5F5, #F2F3F5 */
-
-/*PLANS?
-add a border gradient upon hovering the button 
-add sliding aniamtion to reveal new text for button 
-*/
-
-/*ALT + SHIFT + F = formatting 
-CTRL + / makes comments */
+#displayArea {
+  margin: 50vh;
+  border: black 5px solid;
+}
 
 #plusSymbol, #postBtn {
   font-size: 22px;
@@ -63,13 +46,6 @@ CTRL + / makes comments */
 textarea, #plusSymbol, #postBtn {
   font-family: "Gaegu", sans-serif;
 }
-
-#displayArea {
-  margin: 50vh;
-  border: black 5px solid;
-}
-
-
 
 h1 {
   font-size: 7em;
@@ -93,3 +69,22 @@ html {
   ); /*creates that dotted journal paper look*/
   background-size: 20px 20px; /*spacing between the dots */
 }
+
+
+
+/*journal colors: 
+#D6BFDE purple 
+#F7CFD8 pink 
+#FCD23F yellow 
+#F7A28D red/coral 
+#F4CFB5 peach
+
+some shades of white: #F5F5F5, #F2F3F5 */
+
+/*PLANS?
+add a border gradient upon hovering the button 
+add sliding aniamtion to reveal new text for button 
+*/
+
+/*ALT + SHIFT + F = formatting 
+CTRL + / makes comments */
