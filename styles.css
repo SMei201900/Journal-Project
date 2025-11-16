@@ -43,11 +43,10 @@
   background-color: #f5f5f4; 
 }
 
-#circle { 
-  display: none; /*to hide it first*/
+#deleteBtn {
+  background-color: yellowgreen;
   width: 25px;
   height: 25px;
-  background-color: yellowgreen; 
   border-radius: 50%;
 }
 
