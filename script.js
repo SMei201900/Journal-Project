@@ -29,7 +29,7 @@ postbtn.addEventListener("click", (event) => {
   entry.classList.add("entry", "tile") /*to add styling to the journal entry*/ 
   //
   let deletebtn = document.createElement("button");
-  deletebtn.classList.add = "deleteBtn"; /*for styling*/ 
+  deletebtn.classList.add("deleteBtn"); /*for styling*/ 
   deletebtn.textContent = "X";
   //
   let theEntry = document.createElement("span"); /*we want the deleteBtn and the text to sit on the same line*/
