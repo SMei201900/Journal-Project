@@ -1,14 +1,11 @@
-#plusSymbol {
-  position: absolute; /* take the button out of normal document flow */
-  left: 50%; /* move the left edge of the btn to the center */
-  transform: translateX(-50%);
-  /* shift btn back by half its width b/c I want the center of the btn not the top-left corner of the btn to be the center */
-  transform-origin: center; /*bc default is top-left corner which causes the btn to shift right*/
+#theBtns { /*aka the form holding the buttons*/
+  text-align: center;
 }
 
-#plusSymbol:hover {
-  transform: translateX(-50%) scale(1.1); /*makes sure centerOfBtn is in the middle + enlarges the btn*/
+#plusSymbol:hover, #postBtn:hover {
+  transform: scale(1.1);
 }
+
 
 #journalBox {
   margin-top: 25px;
@@ -33,7 +30,9 @@
 #displayArea {
   margin-top: 50vh;
   display: none; /*we want the displayArea to be hidden first*/
-  grid-template-columns: 1fr 1fr 1fr; /*three columns*/
+  /*grid-template-columns: 1fr 1fr 1fr; /*three columns*/
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .entry {
@@ -43,10 +42,18 @@
   backdrop-filter: blur(1.4px);
   border: 1px solid rgba(245, 245, 244, 0.21); /*create this tile-like look*/
   padding: 15px;
-  margin:10px;
+  margin: 10px;
 }
 
-#deleteBtn {
+.tile {
+  width: calc(100% / 4);
+}
+
+.entry:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.deleteBtn {
   background-color: yellowgreen;
   width: 25px;
   height: 25px;
@@ -55,7 +62,7 @@
   margin-left: 10px;
 }
 
-#deleteBtn:hover {
+.deleteBtn:hover {
   border: black 2px solid;
   transform: scale(1.3);
 }

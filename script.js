@@ -21,22 +21,27 @@ let displayarea = document.getElementById("displayArea");
 
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
-  displayarea.style.display = "grid"; /*the div where the diaryEntries should go is now visible */
+  displayarea.style.display = "flex"; /*the div where the diaryEntries should go is now visible */
   //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
   //
   let entry = document.createElement("div"); /*here to allow me to store my information*/
-  entry.classList.add("entry") /*to add styling to the journal entry*/ 
+  entry.classList.add("entry", "tile") /*to add styling to the journal entry*/ 
   //
-  let deleteBtn = document.createElement("button");
-  deleteBtn.id = "deleteBtn"; /*for styling*/ 
-  deleteBtn.textContent = "X";
+  let deletebtn = document.createElement("button");
+  deletebtn.classList.add = "deleteBtn"; /*for styling*/ 
+  deletebtn.textContent = "X";
   //
   let theEntry = document.createElement("span"); /*we want the deleteBtn and the text to sit on the same line*/
   theEntry.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   //
+  deletebtn.addEventListener("click", (event) => { /*adding functionality to the deleteBtn*/
+    event.preventDefault();
+    entry.remove()
+  })
+  //
   entry.appendChild(theEntry); /*attach them*/
-  entry.appendChild(deleteBtn);
+  entry.appendChild(deletebtn);
   //
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
