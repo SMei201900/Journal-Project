@@ -1,4 +1,3 @@
-let body = document.body;
 //
 let plusSymbol = document.getElementById("plusSymbol");
 let textfield = document.getElementById("journalBox");
@@ -19,6 +18,7 @@ plusSymbol.addEventListener("click", (event) => {
 /*I want to click the post btn and have the textarea content to be displayed in the displayArea div*/
 let postbtn = document.getElementById("postBtn");
 let displayarea = document.getElementById("displayArea");
+let circle = document.getElementById("circle"); 
 
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -30,6 +30,9 @@ postbtn.addEventListener("click", (event) => {
   entry.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
+  
+  //
+  circle.style.display = "block"
 });
 
 
