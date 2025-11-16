@@ -56,6 +56,7 @@ add cursor effect like cascasing pixel stars?
 /*NOTES:
 .remove() is how to remove 
 plusSymbol.classList.add("")    how to add a classList 
+.appendChild ONLY accepts 1 agrument 
 */
 
 /*
