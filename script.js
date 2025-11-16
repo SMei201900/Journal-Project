@@ -23,6 +23,7 @@ let displayarea = document.getElementById("displayArea");
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
   displayarea.style.display = "grid"; /*the div where the diaryEntries should go is now visible */
+  //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
   let entry = document.createElement("div"); /*here to allow me to store my information*/
   entry.classList.add("entry") /*to add styling to the journal entry*/ 
@@ -30,6 +31,8 @@ postbtn.addEventListener("click", (event) => {
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
 });
+
+
 
 /*NEXT STEPS: 
 After the post gets created, there should be an X button next to it to delete it 
