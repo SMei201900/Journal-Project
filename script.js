@@ -3,13 +3,21 @@ let body = document.body;
 let plusSymbol = document.getElementById("plusSymbol");
 let textfield = document.getElementById("journalBox");
 
+let click = 0; 
+
 /*so I click the plusBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading*/
   plusSymbol.textContent = "something was clicked"; /*delete later*/
   console.log("Clicked"); /*delete later*/
-  textfield.placeholder = "just to show something changed"; /*delete later*/
   textfield.style.display = "block"; 
+  click = click + 1;
+  if (click >1) {
+    plusSymbol.textContent = "we clicked more than once" /*delete later*/
+    textfield.placeholder = "";
+    console.log(`clicking some more by ${click}s`);
+  }
+
 });
 
 /*I want to click the post btn and have the textarea content to be displayed in the displayArea div*/
@@ -18,7 +26,6 @@ let displayarea = document.getElementById("displayArea");
 
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log("the textarea stuff needs to show up"); /*delete later*/
   displayarea.style.display = "grid"; 
   let text = journalBox.value; /*the content of what I typed in the textarea*/
   let entry = document.createElement("div"); /*here to allow me to store my information*/
