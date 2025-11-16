@@ -2,22 +2,18 @@ let body = document.body;
 //
 let plusSymbol = document.getElementById("plusSymbol");
 let textfield = document.getElementById("journalBox");
-
+//
 let click = 0; 
 
 /*so I click the plusBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading*/
-  plusSymbol.textContent = "something was clicked"; /*delete later*/
-  console.log("Clicked"); /*delete later*/
-  textfield.style.display = "block"; 
+  textfield.style.display = "block";
+  // 
   click = click + 1;
   if (click >1) {
-    plusSymbol.textContent = "we clicked more than once" /*delete later*/
-    textfield.placeholder = "";
-    console.log(`clicking some more by ${click}s`);
+    textfield.placeholder = ""; /*reset the textarea if clicking the plusSymbolBtn*/
   }
-
 });
 
 /*I want to click the post btn and have the textarea content to be displayed in the displayArea div*/
@@ -26,11 +22,11 @@ let displayarea = document.getElementById("displayArea");
 
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
-  displayarea.style.display = "grid"; 
-  let text = journalBox.value; /*the content of what I typed in the textarea*/
+  displayarea.style.display = "grid"; /*the div where the diaryEntries should go is now visible */
+  let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
   let entry = document.createElement("div"); /*here to allow me to store my information*/
   entry.classList.add("entry") /*to add styling to the journal entry*/ 
-  entry.textContent = text; /*this should display what I had typed in the textarea in the displayArea div*/
+  entry.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
 });
