@@ -1,6 +1,5 @@
 let body = document.body;
 //
-let form = document.getElementById("theBtns")
 let plusSymbol = document.getElementById("plusSymbol");
 
 plusSymbol.addEventListener("click", () => {
