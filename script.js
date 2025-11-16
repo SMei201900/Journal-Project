@@ -7,11 +7,9 @@ plusSymbol.addEventListener("click", () => {
   event.preventDefault(); /*prevent the page from reloading*/
   plusSymbol.textContent = "something was clicked"; /*changes the text of the button*/
   console.log("Clicked")
-  let textfield = document.createElement("textarea")
-  textfield.id = "journalBox"
-  textfield.placeholder = "Today I ... " /*placeholder text*/
-  textfield.classList.add("placeholder") /*adds CSS styling to placeholder text*/
-  form.appendChild(textfield); /*add to the form of the HTML doc*/
+  document.getElementById("journalBox").placeholder = "just to show something changed";
+  document.getElementById("journalBox").style.display = "block"; 
+    /*this changed my styling SO come back to it*/
 });
 
 let postbtn = document.getElementById("postBtn");
