@@ -31,9 +31,17 @@
 }
 
 #displayArea {
-  margin: 50vh;
+  margin-top: 50vh;
   border: black 5px solid;
+  display: none; /*we want the displayArea to be hidden first*/
+  grid-template-columns: 1fr 1fr 1fr; /*three columns*/
 }
+
+.entry {
+  border: blue 3px solid; /*adds border between the posts*/
+}
+
+
 
 #plusSymbol, #postBtn {
   font-size: 22px;
