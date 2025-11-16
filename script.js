@@ -32,16 +32,22 @@ postbtn.addEventListener("click", (event) => {
   deletebtn.classList.add("deleteBtn"); /*for styling*/ 
   deletebtn.textContent = "X";
   //
-  let theEntry = document.createElement("span"); /*we want the deleteBtn and the text to sit on the same line*/
-  theEntry.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
+  let entryText = document.createElement("span"); /*we want the deleteBtn and the text to sit on the same line*/
+  entryText.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   //
-  deletebtn.addEventListener("click", (event) => { /*adding functionality to the deleteBtn*/
+  /*adding functionality to the deleteBtn*/
+  deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
     entry.remove()
   })
   //
-  entry.appendChild(theEntry); /*attach them*/
-  entry.appendChild(deletebtn);
+  
+  if (text.length == 0) {
+    alert("Please write something first"); 
+  } else {
+  entry.appendChild(entryText); /*attaching journalBox.value aka what I typed to entry aka the new div*/
+  entry.appendChild(deletebtn); /*attaching the btn to the div also*/
+  }
   //
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
