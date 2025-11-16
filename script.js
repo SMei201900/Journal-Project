@@ -16,7 +16,15 @@ plusSymbol.addEventListener("click", () => {
 
 /*NEXT STEPS: 
 I need to create a post button
-the resize(?) of the textarea, needs to be darker /bigger or something */
+the resize(?) of the textarea, needs to be darker /bigger or something 
+
+i want to keep clicking the plusSymbolBtn to create more textareas so a LOOP?
+this means remove LINE7 later 
+
+the "post" btn should send everything to another tab with today's date at the sides? bottom? 
+
+After the post gets created, there should be an X button next to it to delete it 
+*/
 
 
 /*

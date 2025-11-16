@@ -1,9 +1,4 @@
 #plusSymbol {
-  font-size: 22px;
-  background: yellowgreen; /*TEMP COLOR*/
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
   position: absolute; /* take the button out of normal document flow */
   left: 50%; /* move the left edge of the btn to the center */
   transform: translateX(-50%);
@@ -27,7 +22,7 @@
   width: 50%; /*implementing a default sizing for the journalTextBox*/
   border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
   border-radius: 40px;
-  background-color: white; 
+  background-color: white;
 }
 
 .placeholder {
@@ -47,8 +42,7 @@
 #F7A28D red/coral 
 #F4CFB5 peach
 
-F5F5F5 
-F2F3F5 */
+some shades of white: #F5F5F5, #F2F3F5 */
 
 /*PLANS?
 add a border gradient upon hovering the button 
@@ -58,17 +52,15 @@ add sliding aniamtion to reveal new text for button
 /*ALT + SHIFT + F = formatting 
 CTRL + / makes comments */
 
+#plusSymbol, #postBtn {
+  font-size: 22px;
+  background: yellowgreen;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+}
 
-
-
-
-
-
-
-
-
-
-textarea, #plusSymbol {
+textarea, #plusSymbol, #postBtn {
   font-family: "Gaegu", sans-serif;
 }
 
@@ -87,6 +79,10 @@ body {
 
 html {
   background-color: #f3f2f2;
-  background-image: radial-gradient(circle, black 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    black 1px,
+    transparent 1px
+  ); /*creates that dotted journal paper look*/
   background-size: 20px 20px; /*spacing between the dots */
 }
