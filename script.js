@@ -1,4 +1,3 @@
-//
 let plusSymbol = document.getElementById("plusSymbol");
 let textfield = document.getElementById("journalBox");
 //

@@ -6,7 +6,6 @@
   transform: scale(1.1);
 }
 
-
 #journalBox {
   margin-top: 25px;
   font-size: 18px;
@@ -30,7 +29,6 @@
 #displayArea {
   margin-top: 50vh;
   display: none; /*we want the displayArea to be hidden first*/
-  /*grid-template-columns: 1fr 1fr 1fr; /*three columns*/
   flex-flow: wrap;
   justify-content: center;
 }
@@ -91,6 +89,7 @@ body {
   font-family: "Gaegu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  cursor: url('diamond-cursor.png'), auto;
 }
 
 html {
