@@ -40,7 +40,6 @@ postbtn.addEventListener("click", (event) => {
     event.preventDefault();
     entry.remove()
   })
-  //
   
   if (text.length == 0) { /*prevent an empty post from being made*/
     alert("Please write something first"); 
