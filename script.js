@@ -55,7 +55,6 @@ postbtn.addEventListener("click", (event) => {
 
 
 /*NEXT STEPS: 
-the resize(?) of the textarea (aka that litter corner) needs to be darker /bigger or something 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascasing pixel stars? 
 */
