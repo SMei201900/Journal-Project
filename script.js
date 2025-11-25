@@ -45,7 +45,8 @@ postbtn.addEventListener("click", (event) => {
     alert("Please write something first"); 
     entry = false; 
   } else {
-  entry.appendChild(entryText); /*attaching journalBox.value aka what I typed to entry aka the new div*/
+  entry.appendChild(entryText); 
+    /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
   entry.appendChild(deletebtn); /*attaching the btn to the div also*/
   }
   //
