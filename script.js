@@ -57,19 +57,8 @@ postbtn.addEventListener("click", (event) => {
 
 /*NEXT STEPS: 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
-add cursor effect like cascasing pixel stars? 
+add cursor effect like cascading pixel stars? 
 add custom sounds?
-*/
-
-/*NOTES:
-.remove() is how to remove 
-plusSymbol.classList.add("")    how to add a classList 
-.appendChild ONLY accepts 1 agrument 
-*/
-
-/*
-Custom cursor? 
-https://img.freepik.com/premium-vector/carddiamond-icon-isolated-white-background_268104-11359.jpg 
 */
 
 /*custom sounds?
@@ -77,3 +66,11 @@ button one? https://pixabay.com/sound-effects/sparkle-355937/
 mousemove eventlistener one --> https://pixabay.com/sound-effects/magic-sparkle-190030/ 
 post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/ 
 */
+
+
+/*NOTES:
+.remove() is how to remove 
+plusSymbol.classList.add("")    how to add a classList 
+.appendChild ONLY accepts 1 agrument 
+*/
+
