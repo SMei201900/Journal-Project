@@ -45,17 +45,18 @@ postbtn.addEventListener("click", (event) => {
     alert("Please write something first"); 
     entry = false; 
   } else {
-  entry.appendChild(entryText); 
-    /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
-  entry.appendChild(deletebtn); /*attaching the btn to the div also*/
+    currentDate = new Date()
+    currentDate.toLocaleString(); /*gives the current day and time in readable format*/
+    entry.append(currentDate) 
+    //
+    entry.appendChild(entryText); 
+      /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
+    entry.appendChild(deletebtn); /*attaching the btn to the div also*/
   }
   //
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
 });
-
-currentDate = new Date()
-console.log(currentDate.toLocaleString()); /*gives the current day and time in readable format*/
 
 
 /*NEXT STEPS: 
@@ -80,5 +81,8 @@ post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/
 .remove() is how to remove 
 plusSymbol.classList.add("")    how to add a classList 
 .appendChild ONLY accepts 1 agrument 
+appendChild is wrong when using Date() bc it isnt a DOM object? 
+
+
 */
 
