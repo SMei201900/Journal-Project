@@ -54,6 +54,9 @@ postbtn.addEventListener("click", (event) => {
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/
 });
 
+currentDate = new Date()
+console.log(currentDate.toLocaleString()); /*gives the current day and time in readable format*/
+
 
 /*NEXT STEPS: 
 I need to add date+time
