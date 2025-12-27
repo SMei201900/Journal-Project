@@ -62,7 +62,8 @@ postbtn.addEventListener("click", (event) => {
 
 
 /*NEXT STEPS: 
-I need to add date+time
+I want the deleteBtn to be at the upper-(my)right 
+
 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascading pixel stars? 
