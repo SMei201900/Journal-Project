@@ -11,15 +11,15 @@
   font-size: 18px;
   padding-left: 20px;
   padding-top: 10px;
-  position: absolute;
+  position: absolute; /*starting here ...*/
   left: 50%;
-  transform: translateX(-50%); /*above 3 codes is to make sure the box is in the middle*/
+  transform: translateX(-50%); /*ending here, these are codes to make sure the box is in the middle*/
   height: 300px;
   width: 50%; /*implementing a default sizing for the journalTextBox*/
   border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
   border-radius: 40px;
   background-color: white;
-  display: none; /*should make the textfield hidden until the plusSymbolBtn is clicked*/
+  display: none; /*makes the textfield hidden until the plusSymbolBtn (it says "New Post") is clicked*/
 }
 
 #journalBox:focus {

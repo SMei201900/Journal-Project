@@ -25,14 +25,16 @@ postbtn.addEventListener("click", (event) => {
   //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
   //
-  let entry = document.createElement("div"); /*here to allow me to store my information*/
+  let entry = document.createElement("div"); 
+    /*here to allow me to store my information. I am creating a new div within the displayArea div*/
   entry.classList.add("entry", "tile") /*to add styling to the journal entry*/ 
   //
   let deletebtn = document.createElement("button");
   deletebtn.classList.add("deleteBtn"); /*for styling*/ 
   deletebtn.textContent = "X";
   //
-  let entryText = document.createElement("span"); /*we want the deleteBtn and the text to sit on the same line*/
+  let entryText = document.createElement("div"); 
+    /*allows date-time, journalText (what I typed), X btn to sit on top of each other*/
   entryText.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   //
   /*adding functionality to the deleteBtn*/
@@ -47,7 +49,7 @@ postbtn.addEventListener("click", (event) => {
   } else {
     currentDate = new Date()
     currentDate.toLocaleString(); /*gives the current day and time in readable format*/
-    entry.append(currentDate) 
+    entry.append(currentDate) /*attaches the date-time to entry (the new div that will hold the journal text) */
     //
     entry.appendChild(entryText); 
       /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
@@ -81,7 +83,7 @@ post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/
 .remove() is how to remove 
 plusSymbol.classList.add("")    how to add a classList 
 .appendChild ONLY accepts 1 agrument 
-appendChild is wrong when using Date() bc it isnt a DOM object? 
+appendChild is wrong when using Date() bc it isnt a DOM node object. I was trying to pass a string.  
 
 
 */
