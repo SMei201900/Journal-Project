@@ -80,6 +80,13 @@ postbtn.addEventListener("click", (event) => {
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascading pixel stars? 
 
+change the alert to something else 
+  --> suggestions: https://sweetalert.js.org/ 
+  --> https://svelte-french-toast.com/ 
+  --> dialog 
+  --> blurt --> https://bitwiser.in/blurt/#:~:text=blurt%20is%20a%20javascript%20replacement,prompt()%20%2D%3E%20brompt() 
+
+
 FAR FUTURE: upload onto Netlify and sites like that 
 */
 
