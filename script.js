@@ -22,9 +22,6 @@ let displayarea = document.getElementById("displayArea");
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
   //
-   const sound = new Audio("sparkle.mp3");
-   sound.play(); 
- //
   displayarea.style.display = "flex"; /*the div where the diaryEntries should go is now visible */
   //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
@@ -33,6 +30,9 @@ postbtn.addEventListener("click", (event) => {
     alert("Please write something first"); 
     return;  
   } 
+  //
+  const sound = new Audio("sparkle.mp3");
+  sound.play(); 
   //
   let entry = document.createElement("div"); 
     /*here to allow me to store my information. I am creating a new div within the displayArea div*/
@@ -77,7 +77,6 @@ FAR FUTURE: upload onto Netlify and sites like that
 */
 
 /*custom sounds?
-button one? https://pixabay.com/sound-effects/sparkle-355937/ 
 mousemove eventlistener one --> https://pixabay.com/sound-effects/magic-sparkle-190030/ 
 post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/ 
 */
