@@ -21,6 +21,10 @@ let displayarea = document.getElementById("displayArea");
 
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
+  //
+   const sound = new Audio("sparkle.mp3");
+   sound.play(); 
+ //
   displayarea.style.display = "flex"; /*the div where the diaryEntries should go is now visible */
   //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
@@ -49,9 +53,6 @@ postbtn.addEventListener("click", (event) => {
   /*adding functionality to the deleteBtn*/
   deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
-
-    const sound = new Audio(""); //MISSING SOUND FILE
-    sound.play(); 
 
     entry.remove()
   }); 
