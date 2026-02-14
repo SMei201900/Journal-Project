@@ -25,6 +25,11 @@ postbtn.addEventListener("click", (event) => {
   //
   let text = journalBox.value; /*this is the content of what I typed in the textarea aka my diaryEntries*/
   //
+  if (text.length == 0) { /*prevent an empty post from being made*/
+    alert("Please write something first"); 
+    return;  
+  } 
+  //
   let entry = document.createElement("div"); 
     /*here to allow me to store my information. I am creating a new div within the displayArea div*/
   entry.classList.add("entry", "tile") /*to add styling to the journal entry*/ 
@@ -37,24 +42,22 @@ postbtn.addEventListener("click", (event) => {
     /*allows date-time, journalText (what I typed), X btn to sit on top of each other*/
   entryText.textContent = text; /*this displays what I had typed in the textarea in the displayArea div*/
   //
+  let date = document.createElement("div"); 
+  date.textContent = new Date().toLocaleString(); 
+    /*we created a date object and then restructued it so that we can read the day and time */
+  //
   /*adding functionality to the deleteBtn*/
   deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
     entry.remove()
-  })
-  
-  if (text.length == 0) { /*prevent an empty post from being made*/
-    alert("Please write something first"); 
-    entry = false; 
-  } else {
-    currentDate = new Date()
-    currentDate.toLocaleString(); /*gives the current day and time in readable format*/
-    entry.append(currentDate) /*attaches the date-time to entry (the new div that will hold the journal text) */
-    //
-    entry.appendChild(entryText); 
-      /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
-    entry.appendChild(deletebtn); /*attaching the btn to the div also*/
-  }
+  }); 
+  //
+  entry.append(date) 
+    /*attaches the date-time to entry (the new div that will hold the journal text) */
+  //
+  entry.appendChild(entryText); 
+    /*attaching journalBox.value (so what I typed) to entry (aka the new div that will hold the text*/
+  entry.appendChild(deletebtn); /*attaching the btn to the div also*/
   //
   displayarea.appendChild(entry);
   journalBox.value=""; /*reset the textarea to allow more journal entries to happen*/

@@ -40,8 +40,7 @@
   backdrop-filter: blur(1.4px);
   border: 1px solid rgba(245, 245, 244, 0.21); /*create this tile-like look*/
   padding: 15px;
-  margin: 10px;
-  overflow: scroll;
+  margin: 10px; 
 }
 
 .tile {
@@ -59,9 +58,6 @@
   border-radius: 50%;
   border: transparent;
   margin-left: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .deleteBtn:hover {
