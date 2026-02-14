@@ -19,6 +19,11 @@ plusSymbol.addEventListener("click", (event) => {
 let postbtn = document.getElementById("postBtn");
 let displayarea = document.getElementById("displayArea");
 
+const poof = new Audio("poof.mp3"); /*the deleteBtn's sound effect*/
+poof.preload = "auto";
+poof.playbackRate = 1.2; 
+/*it is placed outside and not with the rest of the deleteBtn code to prevent this audible lag*/
+
 postbtn.addEventListener("click", (event) => {
   event.preventDefault();
   //
@@ -54,10 +59,8 @@ postbtn.addEventListener("click", (event) => {
   deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
 
-    const poof = new Audio("poof.mp3");
-    poof.play();
-    poof.playbackRate = "1";
-
+    poof.play(); /*sound effect plays when btn is clicked*/
+    
     entry.remove()
   }); 
   //
