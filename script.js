@@ -95,10 +95,8 @@ plusSymbol.classList.add("")    how to add a classList
 appendChild is wrong when using Date() bc it isnt a DOM node object. I was trying to pass a string.  
 
 new Audio() creates an audio object, allowing me to add audio 
-
 audio.playbackRate = 0.5; means half of the normal speed (aka the 0.5)
-
-
+playbackRate = 1 means normal 
 
 */
 
