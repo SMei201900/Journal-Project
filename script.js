@@ -49,6 +49,10 @@ postbtn.addEventListener("click", (event) => {
   /*adding functionality to the deleteBtn*/
   deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
+
+    const sound = new Audio(""); //MISSING SOUND FILE
+    sound.play(); 
+
     entry.remove()
   }); 
   //
@@ -67,7 +71,6 @@ postbtn.addEventListener("click", (event) => {
 /*NEXT STEPS: 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascading pixel stars? 
-add custom sounds?
 
 FAR FUTURE: upload onto Netlify and sites like that 
 */
