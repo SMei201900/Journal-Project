@@ -44,8 +44,10 @@
   display: flex;
   flex-direction: column; /*items will stack vertically*/
   position: relative; 
-  word-wrap: break-word; 
   overflow-wrap: break-word;
+    /*prevents a word from overflowing its container bc it takes up too much space on 1 line
+    BY breaking the long word into 2 different words
+    its the same as the legacy word-wrap: break-word */
 }
 
 .entry div {

@@ -31,7 +31,7 @@ postbtn.addEventListener("click", (event) => {
     return;  
   } 
   //
-  const sound = new Audio("sparkle.mp3");
+  const sound = new Audio("sparkle.mp3");  //adding audio to button
   sound.play(); 
   //
   let entry = document.createElement("div"); 
@@ -53,6 +53,10 @@ postbtn.addEventListener("click", (event) => {
   /*adding functionality to the deleteBtn*/
   deletebtn.addEventListener("click", (event) => { 
     event.preventDefault();
+
+    const poof = new Audio("poof.mp3");
+    poof.play();
+    poof.playbackRate = "1";
 
     entry.remove()
   }); 
@@ -78,9 +82,7 @@ FAR FUTURE: upload onto Netlify and sites like that
 
 /*custom sounds?
 mousemove eventlistener one --> https://pixabay.com/sound-effects/magic-sparkle-190030/ 
-post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/ 
 */
-
 
 
 /*NOTES:
@@ -88,6 +90,11 @@ post sound: https://pixabay.com/sound-effects/magic-sparkle-190030/
 plusSymbol.classList.add("")    how to add a classList 
 .appendChild ONLY accepts 1 agrument 
 appendChild is wrong when using Date() bc it isnt a DOM node object. I was trying to pass a string.  
+
+new Audio() creates an audio object, allowing me to add audio 
+
+audio.playbackRate = 0.5; means half of the normal speed (aka the 0.5)
+
 
 
 */
