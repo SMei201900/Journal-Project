@@ -86,6 +86,8 @@ change the alert to something else
   --> dialog 
   --> blurt --> https://bitwiser.in/blurt/#:~:text=blurt%20is%20a%20javascript%20replacement,prompt()%20%2D%3E%20brompt() 
 
+https://www.amitmerchant.com/popover-api-101/  
+
 
 FAR FUTURE: upload onto Netlify and sites like that 
 */
