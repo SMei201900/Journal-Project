@@ -1,8 +1,10 @@
-#theBtns { /*aka the form holding the buttons*/
+#theBtns {
+  /*aka the form holding the buttons*/
   text-align: center;
 }
 
-#plusSymbol:hover, #postBtn:hover {
+#plusSymbol:hover,
+#postBtn:hover {
   transform: scale(1.1);
 }
 
@@ -13,7 +15,9 @@
   padding-top: 10px;
   position: absolute; /*starting here ...*/
   left: 50%;
-  transform: translateX(-50%); /*ending here, these are codes to make sure the box is in the middle*/
+  transform: translateX(
+    -50%
+  ); /*ending here, these are codes to make sure the box is in the middle*/
   height: 300px;
   width: 50%; /*implementing a default sizing for the journalTextBox*/
   border: solid 3px rgba(128, 128, 128, 0.5); /*gray with a bit of opacity/transparency*/
@@ -40,12 +44,12 @@
   backdrop-filter: blur(1.4px);
   border: 1px solid rgba(245, 245, 244, 0.21); /*create this tile-like look*/
   padding: 15px;
-  margin: 10px; 
+  margin: 10px;
   display: flex;
   flex-direction: column; /*items will stack vertically*/
-  position: relative; 
+  position: relative;
   overflow-wrap: break-word;
-    /*prevents a word from overflowing its container bc it takes up too much space on 1 line
+  /*prevents a word from overflowing its container bc it takes up too much space on 1 line
     BY breaking the long word into 2 different words
     its the same as the legacy word-wrap: break-word */
 }
@@ -70,8 +74,8 @@
   border: transparent;
   margin-left: 10px;
   position: absolute;
-  top: 10px; 
-  right: 10px; 
+  top: 10px;
+  right: 10px;
 }
 
 .deleteBtn:hover {
@@ -80,7 +84,8 @@
   cursor: pointer;
 }
 
-#plusSymbol, #postBtn {
+#plusSymbol,
+#postBtn {
   font-size: 22px;
   background: yellowgreen;
   padding: 10px;
@@ -88,7 +93,24 @@
   border-radius: 25px;
 }
 
-textarea, #plusSymbol, #postBtn {
+#credits {
+  font-size: 20px;
+  text-align: center;
+}
+
+#credits a {
+  text-decoration: none;
+  color: black;
+}
+
+#credits a:hover {
+  text-decoration: underline yellowgreen solid 5px;
+  font-weight: 700;
+}
+
+textarea,
+#plusSymbol,
+#postBtn {
   font-family: "Gaegu", sans-serif;
 }
 
@@ -103,7 +125,9 @@ body {
   font-family: "Gaegu", sans-serif;
   font-weight: 400;
   font-style: normal;
-  cursor: url("diamond-cursor.png") 16 16, auto; /*custom cursor*/
+  cursor:
+    url("diamond-cursor.png") 16 16,
+    auto; /*custom cursor*/
 }
 
 html {
