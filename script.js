@@ -5,16 +5,20 @@ let textfield =
     "journalBox",
   ); /*the corresponding HTML is <textarea>*/
 //
+
 let creditsCall =
   document.getElementById("creditsParent"); /*the sparkle icon in h1*/
-let credits = document.getElementById("creditsChild"); /*the profile link*/
+let creditsChild = document.getElementById("creditsChild"); //calling the credits text
 
-creditsCall.addEventListener("mouseenter", () => {
-  credits.style.display = "block";
-});
-
-creditsCall.addEventListener("mouseleave", () => {
-  credits.style.display = "none";
+creditsCall.addEventListener("click", (event) => {
+  if (
+    creditsChild.style.display === "none" ||
+    creditsChild.style.display === ""
+  ) {
+    creditsChild.style.display = "inline-block"; //display it
+  } else {
+    creditsChild.style.display = "none"; //hide it back after clicking
+  }
 });
 
 //
