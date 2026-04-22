@@ -25,9 +25,12 @@ function newPlaceholderText() {
   */
 }
 
+const newPostSound = new Audio("upload.mp3"); //adding audio to newPost button
+
 /*so I click the plusSymbolBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
   event.preventDefault(); /*prevent the page from reloading just bc the button was clicked*/
+  newPostSound.play();
   textfield.style.display = "block";
   /*reset the textarea if clicking the plusSymbolBtn*/
   click = click + 1;
@@ -110,8 +113,7 @@ postbtn.addEventListener("click", (event) => {
 });
 
 /*NEXT STEPS: 
-newpost-btn is missing a sound effect 
-click newpost-btn and the "placeholder text" changes randomly? 
+finish adding credits --> sound effects are from pixbay.com 
 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascading pixel stars? 
