@@ -5,8 +5,21 @@ let textfield =
     "journalBox",
   ); /*the corresponding HTML is <textarea>*/
 //
-let click = 0;
+let creditsCall =
+  document.getElementById("creditsParent"); /*the sparkle icon in h1*/
+let credits = document.getElementById("creditsChild"); /*the profile link*/
 
+creditsCall.addEventListener("mouseenter", () => {
+  credits.style.display = "block";
+});
+
+creditsCall.addEventListener("mouseleave", () => {
+  credits.style.display = "none";
+});
+
+//
+let click = 0;
+//
 let letPlaceholderTextbe = [
   "Dear Diary ...",
   "Dear Journal ...",
@@ -24,7 +37,7 @@ function newPlaceholderText() {
   And finally we round that number
   */
 }
-
+//
 const newPostSound = new Audio("upload.mp3"); //adding audio to newPost button
 
 /*so I click the plusSymbolBtn and the textara displays */

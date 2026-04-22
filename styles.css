@@ -94,16 +94,40 @@
 }
 
 #credits {
-  font-size: 20px;
-  text-align: center;
+  position: relative;
 }
 
-#credits a {
+#credits span {
+  position: absolute;
+}
+/*allowed the sparkle to be on the upperright of h1*/
+
+#creditsBorder {
+  font-size: 43px;
+  font-weight: 500;
+  color: yellowgreen;
+  transform: translate(50, 50);
+}
+
+#creditsParent {
+  font-size: 36px;
+}
+
+#creditsParent:hover {
+  color: yellowgreen;
+}
+
+#creditsChild {
+  font-size: 20px;
+  display: none;
+}
+
+#creditsChild a {
   text-decoration: none;
   color: black;
 }
 
-#credits a:hover {
+#creditsChild a:hover {
   text-decoration: underline yellowgreen solid 5px;
   font-weight: 700;
 }
