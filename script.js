@@ -1,7 +1,29 @@
-let plusSymbol = document.getElementById("plusSymbol");
-let textfield = document.getElementById("journalBox");
+let plusSymbol =
+  document.getElementById("plusSymbol"); /*the "new post button"*/
+let textfield =
+  document.getElementById(
+    "journalBox",
+  ); /*the corresponding HTML is <textarea>*/
 //
 let click = 0;
+
+let letPlaceholderTextbe = [
+  "Dear Diary ...",
+  "Dear Journal ...",
+  "Today I ...",
+  "Today we...",
+  "You won't believe what happened!",
+  "I am feeling",
+  "My mood is ...",
+];
+
+function newPlaceholderText() {
+  return Math.floor(Math.random() * letPlaceholderTextbe.length);
+  /*letPlaceholderTextbe.length is how long that list is which is currently 7
+  So 7 times a number from 0-1 
+  And finally we round that number
+  */
+}
 
 /*so I click the plusSymbolBtn and the textara displays */
 plusSymbol.addEventListener("click", (event) => {
@@ -10,7 +32,10 @@ plusSymbol.addEventListener("click", (event) => {
   /*reset the textarea if clicking the plusSymbolBtn*/
   click = click + 1;
   if (click > 1) {
-    textfield.placeholder = "Dear Diary ...";
+    let randomPlaceholder = newPlaceholderText();
+    /*I am calling the function which gives me a number*/
+    textfield.placeholder = letPlaceholderTextbe[randomPlaceholder];
+    /*then I am calling the list by the number ("index")*/
     textfield.value = "";
   }
 });
@@ -122,4 +147,6 @@ new Audio() creates an audio object, allowing me to add audio
 audio.playbackRate = 0.5; means half of the normal speed (aka the 0.5)
 playbackRate = 1 means normal 
 
+Math.floor() = rounding numbers
+Math.random() has a range of 0-1 
 */
