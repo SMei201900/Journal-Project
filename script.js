@@ -81,7 +81,7 @@ postbtn.addEventListener("click", (event) => {
   //
   if (text.length == 0) {
     /*prevent an empty post from being made*/
-    alert("Please write something first");
+    swal("Error", "Please write something first!", "error");
     return;
   }
   //
@@ -139,7 +139,7 @@ add cursor effect like cascading pixel stars?
 --> https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML 
 
 
-change the alert 9"you need to write something first before posting") to something else 
+change the alert "you need to write something first before posting" to something else 
   --> suggestions: https://sweetalert.js.org/ 
   --> https://svelte-french-toast.com/ 
   --> dialog 
