@@ -130,7 +130,10 @@ postbtn.addEventListener("click", (event) => {
 });
 
 /*NEXT STEPS: 
-finish adding credits --> sound effects are from pixbay.com 
+finish adding credits 
+--> sound effects are from pixbay.com 
+--> sweetalert used 
+
 
 the "post" btn should send everything to another tab with today's date at the sides? bottom? 
 add cursor effect like cascading pixel stars? 
@@ -138,14 +141,7 @@ add cursor effect like cascading pixel stars?
 --> https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API 
 --> https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML 
 
-
-change the alert "you need to write something first before posting" to something else 
-  --> suggestions: https://sweetalert.js.org/ 
-  --> https://svelte-french-toast.com/ 
-  --> dialog 
-  --> blurt --> https://bitwiser.in/blurt/#:~:text=blurt%20is%20a%20javascript%20replacement,prompt()%20%2D%3E%20brompt() 
-
-figure out how to add images for journal entry 
+figure out how to add images for journal entry --> might need to do a form 
 
 create a hide button --> hide all entry & a hide info but keep the date 
 

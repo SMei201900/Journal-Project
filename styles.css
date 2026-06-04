@@ -8,6 +8,14 @@
   transform: scale(1.1);
 }
 
+.swal-title {
+  font-size: 55px;
+}
+
+.swal-text {
+  font-size: 22px;
+}
+
 #journalBox {
   margin-top: 25px;
   font-size: 18px;
